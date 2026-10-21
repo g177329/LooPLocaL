@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoopLocal | Collection Centers</title>
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+  <header class="header">
+    <img src="../images/hands.webp" alt="Hands" class="header-img" />
+    <div class="header-text">
+      <h1>COLLECTION CENTERS</h1>
+      <p>Find your nearest recycling point</p>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="sorting-guide.html">SORTING GUIDE</a>
+    <a href="centers.html" class="active">CENTERS</a>
+    <a href="community.html">COMMUNITY</a>
+  </nav>
+
+  <main class="container" id="mainMapContent">
+    <section class="section">
+      <div class="search-wrapper">
+        <input type="text" id="postcodeSearch" class="input" placeholder="Enter your postcode (e.g., E1) to find the nearest center..." />
+        <button id="searchBtn" class="btn">Search</button>
+      </div>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <div id="overlay" class="overlay hidden"></div>
+
+  <div id="bookingPanel" class="booking-panel hidden">
+    <button id="closeBooking" class="close-btn">&times;</button>
+    <h3 id="centerName">Center Name</h3>
+    <p id="centerType" style="color: #666; margin-bottom: 1rem;">Accepts: Plastic, Metal</p>
+    
+    <form id="bookingForm">
+      <label for="bookDate">Select Date</label>
+      <input type="date" id="bookDate" class="input" required />
+
+      <label for="bookTime">Select Time Slot</label>
+      <select id="bookTime" class="input" required>
+        <option value="09:00">09:00 - 11:00</option>
+        <option value="11:00">11:00 - 13:00</option>
+        <option value="13:00">13:00 - 15:00</option>
+        <option value="15:00">15:00 - 17:00</option>
+      </select>
+
+      <label for="bookWaste">What are you bringing?</label>
+      <select id="bookWaste" class="input" required>
+        <option value="Recycling">General Recycling</option>
+        <option value="E-Waste">E-Waste</option>
+        <option value="Organic">Organic Waste</option>
+        <option value="Hazardous">Hazardous Materials</option>
+      </select>
+
+      <label for="carPlate">Car Registration (UK)</label>
+      <input type="text" id="carPlate" class="input" placeholder="e.g., AB12 CDE" required style="text-transform: uppercase;" />
+      <small id="plateError" style="color: #dc2626; display: none; font-size: 0.8rem; margin-top: -10px; margin-bottom: 10px; display: block;">Please enter a valid UK plate (e.g., AB12 CDE).</small>
+
+      <div id="busyIndicator" class="busy-indicator">
+        <span class="dot green"></span> <span id="busyText">Checking availability...</span>
+      </div>
+
+      <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Confirm Booking</button>
+      <button type="button" id="reportIssueBtn" class="btn btn-outline" style="width: 100%; margin-top: 10px; border-color: #dc2626; color: #dc2626;">Report Issue (Bin is full)</button>
+    </form>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="../js/map.js"></script>
+  <footer class="footer">
+    <p>© 2026 LoopLocal · CPU4106 Group Project</p>
+  </footer>
+</body>
+</html>

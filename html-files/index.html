@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoopLocal | Home</title>
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <img src="../images/hands.webp" alt="Hands" class="header-img" />
+  
+  <div class="header-text">
+    <h1>LOOPLOCAL</h1>
+    <p>Empowering communities to recycle smarter.</p>
+  </div>
+      </header>
+
+  <nav class="main-nav">
+    <a href="index.html" class="active">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="sorting-guide.html">SORTING GUIDE</a>
+    <a href="centers.html">CENTERS</a>
+    <a href="community.html">COMMUNITY</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="box box-purple">
+        <h2>Building a Greener City</h2>
+        <p>One bin at a time. Find out how to sort your waste correctly and never miss a collection day again.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="centers.html" class="btn">Find a Drop-off Point</a>
+          <a href="sorting-guide.html" class="btn btn-outline" style="background: transparent; color: var(--teal);">Learn How to Sort</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUR IMPACT DASHBOARD -->
+  <section class="section" id="dashboard">
+    <h2 class="section-title">📊 Your Impact Dashboard</h2>
+    <p style="text-align: center; margin-bottom: 2rem;">Log items you recycle to see your real-time environmental impact.</p>
+    
+    <div class="dashboard-grid">
+      <!-- Log Form -->
+      <form id="logForm" class="card">
+        <h3>Log recycled item</h3>
+        <label for="logItem" style="display:block; margin-top: 10px; font-size: 0.9rem; font-weight: 600;">Item Type</label>
+        <select id="logItem" class="input" required></select>
+        
+        <label for="logCount" style="display:block; margin-top: 10px; font-size: 0.9rem; font-weight: 600;">Quantity</label>
+        <input id="logCount" class="input" type="number" min="1" value="1" required />
+        
+        <button class="btn" type="submit" style="width: 100%; margin-top: 10px;">+ Add to log</button>
+        <button class="btn btn-outline" type="button" id="resetLog" style="width: 100%; margin-top: 10px;">Reset Data</button>
+      </form>
+
+      <!-- Card Charts -->
+      <div class="card chart-card">
+        <h3>Category breakdown</h3>
+        <canvas id="doughnutChart" aria-label="Recycling category breakdown chart" role="img"></canvas>
+      </div>
+
+      <!-- Bars -->
+      <div class="card chart-card">
+        <h3>Last 7 days activity</h3>
+        <canvas id="barChart" aria-label="Weekly recycling activity chart" role="img"></canvas>
+      </div>
+
+      <!-- Calculate CO2 -->
+      <div class="card impact-card" style="display: flex; flex-direction: column; justify-content: center;">
+        <h3>🌱 Your Total Impact</h3>
+        <p style="font-size: 1.2rem; margin-bottom: 0.5rem;"><strong id="impactCO2" style="color: var(--teal); font-size: 1.8rem;">0 kg</strong> CO₂ avoided</p>
+        <p style="font-size: 1.1rem;"><strong id="impactItems" style="color: var(--teal); font-size: 1.5rem;">0</strong> items recycled</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Counter -->
+  <section class="container" style="margin-top: -3rem; position: relative; z-index: 2;">
+    <div class="dashboard-grid">
+      <div class="card impact-card" style="text-align: center; background: var(--teal); color: white;">
+        <h3 style="color: white;">🌱 Waste Diverted</h3>
+        <p><strong style="font-size: 2.5rem; color: white;">1,250 kg</strong></p>
+      </div>
+      <div class="card impact-card" style="text-align: center;">
+        <h3>🌳 Trees Saved</h3>
+        <p><strong style="font-size: 2.5rem; color: var(--teal);">45</strong></p>
+      </div>
+      <div class="card impact-card" style="text-align: center;">
+        <h3>👥 Members Joined</h3>
+        <p><strong style="font-size: 2.5rem; color: var(--teal);">500+</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="section">
+      <h2 class="section-title">📅 Latest News & Events</h2>
+      <div class="items-grid">
+        <div class="item-card">
+          <h4>Community Clean-up</h4>
+          <p class="rule">Join us this Saturday at the local park to help clear litter and sort recyclables.</p>
+        </div>
+        <div class="item-card">
+          <h4>Composting Workshop</h4>
+          <p class="rule">Learn how to turn your food scraps into rich soil for your garden.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">🌍 The SDG 11 Connection</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+        By improving waste management and recycling rates, we directly support <strong>UN Sustainable Development Goal 11</strong>: making cities inclusive, safe, resilient, and sustainable.
+      </p>
+    </section>
+  </main>
+
+  <script src="../js/main.js"></script>
+  <footer class="footer">
+    <p>© 2026 LoopLocal · CPU4106 Group Project</p>
+  </footer>
+</body>
+</html>

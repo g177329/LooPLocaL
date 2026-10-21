@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoopLocal | Sorting Guide</title>
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="../images/hands.webp" alt="Hands" class="header-img" />
+    <div class="header-text">
+      <h1>SORTING GUIDE</h1>
+      <p>Know what goes where</p>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="sorting-guide.html" class="active">SORTING GUIDE</a>
+    <a href="centers.html">CENTERS</a>
+    <a href="community.html">COMMUNITY</a>
+  </nav>
+
+  <main class="container">
+    <section class="section">
+      <!-- Tips -->
+      <div class="dashboard-grid" style="margin-bottom: 2rem;">
+        <div class="card" style="background: var(--yellow); box-shadow: none; border: 1px solid #e2e8f0;">
+          <h4>💡 Pro-Tip: Rinse your jars!</h4>
+          <p style="margin:0; font-size: 0.9rem;">Food residue contaminates recycling batches. A quick rinse is all it takes.</p>
+        </div>
+        <div class="card" style="background: var(--purple); box-shadow: none; border: 1px solid #e2e8f0;">
+          <h4>💡 Pro-Tip: Remove plastic caps!</h4>
+          <p style="margin:0; font-size: 0.9rem;">Plastic caps and glass bottles are recycled separately. Keep them apart.</p>
+        </div>
+      </div>
+
+      <div class="guide-controls">
+        <input type="search" id="searchInput" class="input" placeholder="Search items (e.g. battery, plastic bottle)..." />
+        <div class="filter-chips" id="filterChips"></div>
+      </div>
+      <p class="disclaimer">* Disclaimer: CO₂ savings are approximate estimates. Actual environmental impact varies depending on the item's size, weight, and local recycling facilities.</p>
+      <div class="items-grid" id="itemsGrid"></div>
+    </section>
+  </main>
+
+  <script src="../js/main.js"></script>
+  <footer class="footer">
+    <p>© 2026 LoopLocal · CPU4106 Group Project</p>
+  </footer>
+</body>
+</html>

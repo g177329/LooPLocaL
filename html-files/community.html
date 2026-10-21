@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoopLocal | Community</title>
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="../images/hands.webp" alt="Hands" class="header-img" />
+    <div class="header-text">
+      <h1>THE COMMUNITY</h1>
+      <p>Join the Green Team</p>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="sorting-guide.html">SORTING GUIDE</a>
+    <a href="centers.html">CENTERS</a>
+    <a href="community.html" class="active">COMMUNITY</a>
+  </nav>
+
+  <main class="container">
+    <section class="section">
+      <h2 class="section-title">🤝 Volunteer & Events Hub</h2>
+      <div class="community-grid">
+        <div class="card">
+          <h3>Join the Green Team</h3>
+          <p>Sign up for upcoming neighborhood clean-ups!</p>
+          <form id="volunteerForm">
+            <input type="text" id="volName" class="input" placeholder="Your Name" required />
+            <input type="email" id="volEmail" class="input" placeholder="Email Address" required />
+            <select id="volEvent" class="input">
+              <option>Park Clean-up (Saturday)</option>
+              <option>Tree Planting (Sunday)</option>
+              <option>Recycling Workshop</option>
+            </select>
+            <button type="submit" class="btn" style="width: 100%;">Sign Up</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>♻️ Greecycle Board</h3>
+          <p>Give away items you no longer need instead of throwing them away.</p>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 10px; border-bottom: 1px solid #eee;">🪑 Wooden Chair - <em>Free to a good home</em></li>
+            <li style="padding: 10px; border-bottom: 1px solid #eee;">📚 Box of Books - <em>Great condition</em></li>
+            <li style="padding: 10px;">🌱 Garden Pots - <em>Used, but clean</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">🛠️ Repair & Reuse Directory</h2>
+      <p style="text-align: center; margin-bottom: 2rem;">Fix it instead of binning it! Here are local repair cafes.</p>
+      <div class="items-grid">
+        <div class="item-card">
+          <h4>Manchester Repair Cafe</h4>
+          <p class="rule">📍 Northern Quarter</p>
+          <p class="rule">Fixes: Electronics, Clothing</p>
+        </div>
+        <div class="item-card">
+          <h4>Bike Revival</h4>
+          <p class="rule">📍 City Centre</p>
+          <p class="rule">Fixes: Bicycles & Scooters</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/main.js"></script>
+  <footer class="footer">
+    <p>© 2026 LoopLocal · CPU4106 Group Project</p>
+  </footer>
+</body>
+</html>

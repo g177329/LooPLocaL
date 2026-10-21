@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoopLocal | Booking Confirmed</title>
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="../images/hands.webp" alt="Hands" class="header-img" />
+    <div class="header-text">
+      <h1>BOOKING CONFIRMED</h1>
+      <p>Thank you for choosing LoopLocal</p>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="sorting-guide.html">SORTING GUIDE</a>
+    <a href="centers.html">CENTERS</a>
+    <a href="community.html">COMMUNITY</a>
+  </nav>
+
+  <main class="container">
+    <section class="section">
+      <div class="receipt-card" id="receiptContainer">
+        <h2>✅ Booking Confirmed!</h2>
+        <p>Please show this code at the center.</p>
+        <div class="booking-code" id="displayCode">#000000</div>
+        <div class="receipt-details">
+          <p><strong>Center:</strong> <span id="rcCenter">-</span></p>
+          <p><strong>Date:</strong> <span id="rcDate">-</span></p>
+          <p><strong>Time:</strong> <span id="rcTime">-</span></p>
+          <p><strong>Waste:</strong> <span id="rcWaste">-</span></p>
+          <p><strong>Vehicle:</strong> <span id="rcPlate">-</span></p>
+        </div>
+        <a href="centers.html" class="btn" style="width: 100%; text-decoration: none;">Make Another Booking</a>
+      </div>
+
+      <div class="receipt-card hidden" id="noBookingMessage" style="text-align: center;">
+        <h2>No active booking found</h2>
+        <p>You haven't made a booking yet.</p>
+        <a href="centers.html" class="btn" style="width: 100%; text-decoration: none;">Go to Centers</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/booking.js"></script>
+  <footer class="footer">
+    <p>© 2026 LoopLocal · CPU4106 Group Project</p>
+  </footer>
+</body>
+</html>
