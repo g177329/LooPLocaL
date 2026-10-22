@@ -102,7 +102,7 @@
   letter-spacing: 2px;
   line-height: 1.1;
   color: #fff;
-  -webkit-text-stroke: 1.5px #000;
+  -webkit-text-stroke: 0.5px #000;
 }
 
 .header-text p {
