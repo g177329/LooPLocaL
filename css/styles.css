@@ -102,6 +102,10 @@
   letter-spacing: 2px;
   line-height: 1.1;
 }
+.header-text h1 {
+  -webkit-text-stroke: 2px #000;   
+  color: #fff;                      
+}
 
 .header-text p {
   font-family: 'Nunito', sans-serif;
