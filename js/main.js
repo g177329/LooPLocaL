@@ -14,7 +14,7 @@ const CATEGORIES = {
     { name: 'Aluminium can', category: 'metal', co2: 0.15, rule: 'Rinse and place in recycling bin.' },
     { name: 'Glass bottle', category: 'glass', co2: 0.30, rule: 'Rinse, place in glass bank.' },
     { name: 'Cardboard box', category: 'paper', co2: 0.05, rule: 'Flatten and place in paper recycling.' },
-    { name: 'Battery (AA)', category: 'hazardous', co2: 0.00, rule: 'Take to battery drop-off point.' },
+    { name: 'Battery', category: 'hazardous', co2: 0.00, rule: 'Take to battery drop-off point.' },
     { name: 'Old smartphone', category: 'ewaste', co2: 0.50, rule: 'Wipe data, take to e-waste collection.' },
     { name: 'Food scraps', category: 'organic', co2: 0.05, rule: 'Compost or use food-waste bin.' },
     { name: 'Old T-shirt', category: 'textile', co2: 0.40, rule: 'Donate or take to textile bank.' }
