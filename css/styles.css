@@ -158,8 +158,6 @@
     width: 100%;
     z-index: 1000;
     box-shadow: 0 -4px 10px rgba(0,0,0,0.1); /* Shadow to separate nav from content */
-    color: #fff;
-  -webkit-text-stroke: 1.5px #000;
   }
   
   .main-nav a {
