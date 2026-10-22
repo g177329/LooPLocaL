@@ -101,8 +101,6 @@
   margin-bottom: 0;
   letter-spacing: 2px;
   line-height: 1.1;
-  color: #fff;
-  -webkit-text-stroke: 0.5px #000;
 }
 
 .header-text p {
@@ -160,6 +158,8 @@
     width: 100%;
     z-index: 1000;
     box-shadow: 0 -4px 10px rgba(0,0,0,0.1); /* Shadow to separate nav from content */
+    color: #fff;
+  -webkit-text-stroke: 1.5px #000;
   }
   
   .main-nav a {
